@@ -1,0 +1,35 @@
+.navbar {
+  padding: 5px 10%;
+  background-color: rgba(255, 255, 255, 0.097);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 1px 10px black;
+}
+.searchIcon {
+  box-sizing: content-box;
+  padding: 0 30px;
+
+}
+.searchIcon:hover {
+  transition: all 200ms linear;
+  transform: translateY(-5px);
+}
+
+.navLinks {
+  list-style: none;
+
+  .navItem {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(103, 103, 103);
+  }
+  .navItem:hover {
+    transition: all 100ms linear;
+    transform: translateY(-2.5px);
+    color: darkcyan;
+  }
+}

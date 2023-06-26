@@ -1,0 +1,77 @@
+.selectContinent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-block: 25px;
+
+  .heading {
+    font-weight: bold;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    font-size: 18px;
+  }
+}
+
+.continentNav {
+  padding-inline: 5px;
+  background-color: rgba(173, 216, 230, 0.44);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 1px 10px black;
+  position: relative;
+}
+
+.navLinks {
+  list-style: none;
+
+  .navItem {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(103, 103, 103);
+  }
+  .navItem:hover {
+    color: darkcyan;
+  }
+}
+
+.innerNav {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.275),
+    rgba(173, 216, 230, 0.44)
+  );
+  display: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+  width: 100%;
+  text-align: start;
+  max-height: 500px;
+
+  .innerFlexBox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    max-height: inherit;
+   
+  }
+
+  a {
+    display: inline-block;
+  }
+  a:hover {
+    background-color: rgba(2, 107, 142, 0.44);
+    color: white;
+  }
+}
+
+.navItem:hover .innerNav {
+  display: block;
+}
